@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import styled from "styled-components";
-import Home from "pages/home";
+import Home from "pages/main";
 import About from "pages/about";
 import Works from "pages/works";
 import Picture from "pages/picture";

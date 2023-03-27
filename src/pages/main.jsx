@@ -21,7 +21,7 @@ const Text = styled.h1`
   }
 `;
 
-export default function Home() {
+export default function Main() {
   return (
     <>
       <ReactTypingEffect //

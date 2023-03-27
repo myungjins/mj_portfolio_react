@@ -1,25 +1,14 @@
-import Root from "pages/root";
-import PortfolioSwiper from "components/portfolioSwiper";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import GlobalStyles from "components/shared/global/globalStyles";
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Root />,
-    errorElement: <p>Not Found😂</p>,
-    children: [
-      { index: true, element: <PortfolioSwiper /> },
-      // { path: "/about", element: <About /> },
-    ],
-  },
-]);
+import Home from "components/home";
 
 function App() {
   return (
     <>
       <GlobalStyles />
-      <RouterProvider router={router} />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
     </>
   );
 }
