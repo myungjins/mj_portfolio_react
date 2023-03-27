@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/mj_portfolio_react/static/css/main.32f81bc4.css",
+    "main.js": "/mj_portfolio_react/static/js/main.af3420d5.js",
+    "static/js/787.1ed0c42c.chunk.js": "/mj_portfolio_react/static/js/787.1ed0c42c.chunk.js",
+    "static/media/vogo_mockup.png": "/mj_portfolio_react/static/media/vogo_mockup.5e937a853aa92688c409.png",
+    "static/media/vogo_brand_mockup.png": "/mj_portfolio_react/static/media/vogo_brand_mockup.2507c2c613eae06bc0b5.png",
+    "static/media/mice_mockup.png": "/mj_portfolio_react/static/media/mice_mockup.75ba14e866f7ccb9c031.png",
+    "static/media/profile.jpg": "/mj_portfolio_react/static/media/profile.c586d35e8d21d46b9401.jpg",
+    "static/media/incheon_mockup.png": "/mj_portfolio_react/static/media/incheon_mockup.6f0cafe041464f917411.png",
+    "static/media/national_museum_mockup.png": "/mj_portfolio_react/static/media/national_museum_mockup.e5b3687ce24ef6726de1.png",
+    "static/media/picture_2.png": "/mj_portfolio_react/static/media/picture_2.8bc0047d57b7ef6b70bb.png",
+    "static/media/cj_mockup.png": "/mj_portfolio_react/static/media/cj_mockup.fa5056dda72d3a8d66cd.png",
+    "static/media/picture_1.png": "/mj_portfolio_react/static/media/picture_1.7bb8ebe67eae38e71888.png",
+    "static/media/app_mockup.png": "/mj_portfolio_react/static/media/app_mockup.8fe188b783ba5b38050f.png",
+    "static/media/picture_bg_1.png": "/mj_portfolio_react/static/media/picture_bg_1.b16cd069a34d513942a3.png",
+    "static/media/picture_bg_2.png": "/mj_portfolio_react/static/media/picture_bg_2.1dc2e67eb8f1fa609e82.png",
+    "index.html": "/mj_portfolio_react/index.html",
+    "static/media/ic_close_black.svg": "/mj_portfolio_react/static/media/ic_close_black.3721b02ec61c1015e90388746e266d15.svg",
+    "static/media/ic_arrow_back.svg": "/mj_portfolio_react/static/media/ic_arrow_back.aabef3dc7b3c542e9e4ca3e529382e84.svg",
+    "main.32f81bc4.css.map": "/mj_portfolio_react/static/css/main.32f81bc4.css.map",
+    "main.af3420d5.js.map": "/mj_portfolio_react/static/js/main.af3420d5.js.map",
+    "787.1ed0c42c.chunk.js.map": "/mj_portfolio_react/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.32f81bc4.css",
+    "static/js/main.af3420d5.js"
+  ]
+}
