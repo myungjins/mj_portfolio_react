@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import PortfolioSwiper from "./portfolioSwiper";
+import FloatingButton from "./floatingButton";
 
 const Container = styled.div`
   overflow: hidden;
@@ -8,10 +9,12 @@ const Container = styled.div`
   height: 100vh;
 `;
 
-export default function Home() {
+const Home = () => {
   return (
     <Container>
       <PortfolioSwiper />
+      <FloatingButton />
     </Container>
   );
-}
+};
+export default Home;
