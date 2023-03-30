@@ -19,7 +19,7 @@ const Title = styled.h1`
   font-weight: bold;
   @media screen and (max-width: 720px) {
     padding: 22% 0 15px;
-    font-size: 25px;
+    font-size: 20px;
   }
 `;
 

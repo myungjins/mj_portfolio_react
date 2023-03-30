@@ -9,7 +9,7 @@ const Title = styled.h1`
   font-weight: bold;
   @media screen and (max-width: 720px) {
     padding: 15% 0 15px;
-    font-size: 25px;
+    font-size: 20px;
   }
 `;
 
@@ -26,10 +26,9 @@ const Wrap = styled.div`
 `;
 
 const Profile = styled.div`
-  width: 30%;
-  padding: 4% 0 0;
+  width: 35%;
+  padding: 1% 0 0;
   @media screen and (max-width: 720px) {
-    width: 40%;
     max-width: 200px;
   }
 `;
@@ -84,7 +83,7 @@ const Tab = styled.li`
   @media screen and (max-width: 720px) {
     padding: 10px;
     margin: 10px 0 0;
-    font-size: 14px;
+    font-size: 12px;
   }
 `;
 
@@ -112,7 +111,7 @@ const ItemLeft = styled.div`
   color: #666;
   text-align: left;
   @media screen and (max-width: 720px) {
-    font-size: 11px;
+    font-size: 10px;
   }
 `;
 

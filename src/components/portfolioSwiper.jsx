@@ -33,11 +33,15 @@ const Logo = styled.h1`
   transform: rotate(-90deg);
   font-size: 20px;
   font-weight: bold;
-  color: #000;
-  /* color: ${(props) => (props.fontColor ? "#000" : "#fff")}; */
+  /* color: #000; */
+  color: ${(props) => (props.fontColor ? "#000" : "#fff")};
   letter-spacing: -1px;
   transition: all 0.5s ease 0s;
   cursor: pointer;
+  @media screen and (max-width: 720px) {
+    top: 70px;
+    font-size: 16px;
+  }
 `;
 
 const Menu = styled.div`
@@ -46,6 +50,9 @@ const Menu = styled.div`
   right: 20px;
   width: 40px;
   cursor: pointer;
+  @media screen and (max-width: 720px) {
+    width: 30px;
+  }
 `;
 
 const Img = styled.img`
@@ -80,6 +87,12 @@ export const CloseSvg = styled(ic_close_black)`
     fill: ${(props) => (props.color ? props.color : "white")};
   }
   cursor: pointer;
+  @media screen and (max-width: 720px) {
+    width: ${(props) => (props.width ? props.width : 30)}px;
+    min-width: ${(props) => (props.width ? props.width : 30)}px;
+    height: ${(props) => (props.height ? props.height : 30)}px;
+    min-height: ${(props) => (props.height ? props.height : 30)}px;
+  }
 `;
 
 const NavWrap = styled.div``;
@@ -181,7 +194,9 @@ const PortfolioSwiper = () => {
   return (
     <>
       <Header>
-        <Logo onClick={() => changeSlide(0)}>Song Myung Jin</Logo>
+        <Logo onClick={() => changeSlide(0)} fontColor={true}>
+          Song Myung Jin
+        </Logo>
         <Menu onClick={() => setModalSee(true)}>
           <Img src={menuBlack} alt="menu" />
         </Menu>
