@@ -34,6 +34,7 @@ const Logo = styled.h1`
   font-size: 20px;
   font-weight: bold;
   color: #000;
+  /* color: ${(props) => (props.fontColor ? "#000" : "#fff")}; */
   letter-spacing: -1px;
   transition: all 0.5s ease 0s;
   cursor: pointer;
@@ -68,8 +69,8 @@ const Nav = styled.div`
 
 export const CloseSvg = styled(ic_close_black)`
   position: absolute;
-  top: 10px;
-  right: 16px;
+  top: 20px;
+  right: 20px;
   width: ${(props) => (props.width ? props.width : 40)}px;
   min-width: ${(props) => (props.width ? props.width : 40)}px;
   height: ${(props) => (props.height ? props.height : 40)}px;
@@ -84,18 +85,40 @@ export const CloseSvg = styled(ic_close_black)`
 const NavWrap = styled.div``;
 
 const NavItem = styled.div`
-  font-size: 30px;
-  color: rgb(129, 129, 129);
+  margin: 0 0 30px;
+  font-size: min(7.33vw, 13vh);
+  color: #818181;
+  font-weight: bold;
+  line-height: 1;
   transition: all 0.3s ease 0s;
   cursor: pointer;
+  &:hover&:nth-of-type(1) {
+    color: #ff4de1;
+  }
+  &:hover&:nth-of-type(2) {
+    color: #52ff74;
+  }
+  &:hover&:nth-of-type(3) {
+    color: #1fdaff;
+  }
+`;
+
+const NavItemSmall = styled.div`
+  font-size: min(2.83vw, 2.5vh);
+  color: #f1f1f1;
+  font-weight: 500;
+  line-height: 1.2;
+  &:not(:last-of-type) {
+    margin: 0 0 15px;
+  }
+`;
+
+const Txt = styled(NavItemSmall)`
+  color: #818181;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
   &:hover {
-    color: rgb(241, 241, 241);
-  }
-  @media screen and (max-width: 620px) {
-    font-size: 20px;
-  }
-  @media screen and (max-width: 400px) {
-    font-size: 15px;
+    color: #f1f1f1;
   }
 `;
 
@@ -168,22 +191,37 @@ const PortfolioSwiper = () => {
             <NavItem onClick={() => changeSlide(0)}>HOME</NavItem>
             <NavItem onClick={() => changeSlide(2)}>PORTFOLIO</NavItem>
             <NavItem onClick={() => changeSlide(4)}>CONTACT</NavItem>
-            <NavItem>
-              <Link to="mailto:myungjinchu2@gmail.com">
-                E-mail : myungjinchu2@gmail.com
-              </Link>
-            </NavItem>
-            <NavItem>
-              <Link to="tel:01089866213">Phone : 010-8986-6213</Link>
-            </NavItem>
-            <NavItem>Kakaotalk : o3omjj</NavItem>
-            <NavItem
-              onClick={() => {
-                window.open(url);
-              }}
-            >
-              Instagram : www.instagram.com/m.jinnnn
-            </NavItem>
+            <NavItemSmall>
+              E-mail
+              <br />
+              <Txt>
+                <Link to="mailto:myungjinchu2@gmail.com">
+                  myungjinchu2@gmail.com
+                </Link>
+              </Txt>
+            </NavItemSmall>
+            <NavItemSmall>
+              Phone
+              <br />
+              <Txt>
+                <Link to="tel:01089866213"> 010-8986-6213</Link>
+              </Txt>
+            </NavItemSmall>
+            <NavItemSmall>
+              Kakaotalk
+              <br />
+              <Txt>o3omjj</Txt>
+            </NavItemSmall>
+            <NavItemSmall>
+              Instagram <br />
+              <Txt
+                onClick={() => {
+                  window.open(url);
+                }}
+              >
+                www.instagram.com/m.jinnnn
+              </Txt>
+            </NavItemSmall>
           </NavWrap>
         </Nav>
       </Header>

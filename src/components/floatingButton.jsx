@@ -54,6 +54,9 @@ const FloatingWrap = styled.div`
   &:hover .insta {
     left: 0;
   }
+  @media screen and (max-width: 720px) {
+    display: none;
+  }
 `;
 
 const Btn = styled.div`
