@@ -29,7 +29,7 @@ const Profile = styled.div`
   width: 35%;
   padding: 1% 0 0;
   @media screen and (max-width: 720px) {
-    max-width: 200px;
+    max-width: 100px;
   }
 `;
 
@@ -62,7 +62,7 @@ const Tab = styled.li`
   position: relative;
   width: 50%;
   padding: 15px;
-  font-size: 19px;
+  font-size: min(2.83vw, 2.5vh);
   color: rgba(0, 0, 0, 0.5);
   font-weight: bold;
   transition: color 0.5s;
@@ -83,7 +83,6 @@ const Tab = styled.li`
   @media screen and (max-width: 720px) {
     padding: 10px;
     margin: 10px 0 0;
-    font-size: 12px;
   }
 `;
 
@@ -91,7 +90,7 @@ const Content = styled.div`
   width: 100%;
   padding: 25px 0 0;
   @media screen and (max-width: 720px) {
-    padding: 20px 0 0;
+    padding: 15px 0 0;
   }
 `;
 
@@ -111,7 +110,7 @@ const ItemLeft = styled.div`
   color: #666;
   text-align: left;
   @media screen and (max-width: 720px) {
-    font-size: 10px;
+    font-size: min(2.33vw, 1.7vh);
   }
 `;
 
