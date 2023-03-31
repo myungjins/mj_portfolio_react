@@ -117,12 +117,15 @@ const NavItem = styled.div`
 `;
 
 const NavItemSmall = styled.div`
-  font-size: min(2.83vw, 2.5vh);
+  font-size: 15px;
   color: #f1f1f1;
   font-weight: 500;
   line-height: 1.2;
   &:not(:last-of-type) {
     margin: 0 0 15px;
+  }
+  @media screen and (max-width: 400px) {
+    font-size: 13px;
   }
 `;
 
@@ -142,14 +145,11 @@ const SSwiper = styled(Swiper)`
   .swiper-slide {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     flex-direction: column;
     width: 100%;
     font-size: 18px;
     background-color: #fff;
-  }
-  .home {
-    justify-content: center;
   }
 `;
 
@@ -259,7 +259,7 @@ const PortfolioSwiper = () => {
         <SwiperSlide>
           <About />
         </SwiperSlide>
-        <SwiperSlide className="works">
+        <SwiperSlide>
           <Works />
         </SwiperSlide>
         <SwiperSlide className="picture">

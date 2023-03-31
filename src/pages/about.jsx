@@ -3,33 +3,37 @@ import styled from "styled-components";
 import profile from "assets/images/common/profile.jpg";
 
 const Title = styled.h1`
-  padding: 8% 0 35px;
+  padding: 0 0 30px;
   font-size: 40px;
   color: #000;
   font-weight: bold;
-  @media screen and (max-width: 720px) {
-    padding: 15% 0 15px;
+  @media screen and (max-width: 800px) {
     font-size: 20px;
+  }
+  @media screen and (max-width: 400px) {
+    font-size: 18px;
+    padding: 0 0 20px;
   }
 `;
 
 const Wrap = styled.div`
   display: flex;
-  align-items: flex-start;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
   max-width: 1000px;
-  @media screen and (max-width: 720px) {
-    align-items: center;
+  @media screen and (max-width: 800px) {
     flex-direction: column;
   }
 `;
 
 const Profile = styled.div`
-  width: 35%;
-  padding: 1% 0 0;
-  @media screen and (max-width: 720px) {
-    max-width: 100px;
+  width: 30%;
+  @media screen and (max-width: 800px) {
+    width: 180px;
+  }
+  @media screen and (max-width: 400px) {
+    width: 130px;
   }
 `;
 
@@ -41,10 +45,14 @@ const Img = styled.img`
 
 const TabWrap = styled.div`
   width: 60%;
-  @media screen and (max-width: 720px) {
+  height: 100%;
+  @media screen and (max-width: 800px) {
     width: 100%;
     max-width: 600px;
     padding: 0 16px;
+  }
+  @media screen and (max-width: 400px) {
+    width: 86%;
   }
 `;
 
@@ -62,7 +70,7 @@ const Tab = styled.li`
   position: relative;
   width: 50%;
   padding: 15px;
-  font-size: min(2.83vw, 2.5vh);
+  font-size: 18px;
   color: rgba(0, 0, 0, 0.5);
   font-weight: bold;
   transition: color 0.5s;
@@ -80,16 +88,17 @@ const Tab = styled.li`
       background-color: #000;
     }
   }
-  @media screen and (max-width: 720px) {
+  @media screen and (max-width: 800px) {
     padding: 10px;
-    margin: 10px 0 0;
+    margin: 5px 0 0;
+    font-size: 13px;
   }
 `;
 
 const Content = styled.div`
   width: 100%;
   padding: 25px 0 0;
-  @media screen and (max-width: 720px) {
+  @media screen and (max-width: 800px) {
     padding: 15px 0 0;
   }
 `;
@@ -98,8 +107,8 @@ const Item = styled.div`
   display: flex;
   &:not(:last-of-type) {
     padding: 0 0 14px;
-    @media screen and (max-width: 720px) {
-      padding: 0 0 8px;
+    @media screen and (max-width: 800px) {
+      padding: 0 0 6px;
     }
   }
 `;
@@ -109,8 +118,8 @@ const ItemLeft = styled.div`
   font-size: 14px;
   color: #666;
   text-align: left;
-  @media screen and (max-width: 720px) {
-    font-size: min(2.33vw, 1.7vh);
+  @media screen and (max-width: 800px) {
+    font-size: 11px;
   }
 `;
 

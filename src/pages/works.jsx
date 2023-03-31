@@ -13,28 +13,25 @@ import SwiperCore, { Navigation } from "swiper";
 SwiperCore.use([Navigation]);
 
 const Title = styled.h1`
-  padding: 5% 0 35px;
+  padding: 0 0 30px;
   font-size: 40px;
   color: #000;
   font-weight: bold;
-  @media screen and (max-width: 720px) {
-    padding: 22% 0 15px;
+  @media screen and (max-width: 800px) {
     font-size: 20px;
+  }
+  @media screen and (max-width: 400px) {
+    font-size: 18px;
+    padding: 0 0 20px;
   }
 `;
 
 const WorksSwiper = styled(Swiper)`
   position: relative;
-  width: 70%;
+  width: 80%;
   text-align: center;
   padding: 0 0 5%;
   .swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
     padding: 0 0 0 0 !important;
     font-size: 18px;
     background-color: #fff;

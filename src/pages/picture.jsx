@@ -48,7 +48,7 @@ const Txt = styled.p`
   color: #000;
   font-weight: 900;
   @media screen and (max-width: 720px) {
-    font-size: 17px;
+    font-size: 20px;
   }
 `;
 
